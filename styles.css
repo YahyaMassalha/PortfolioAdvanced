@@ -1,0 +1,334 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #e0e1dd;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+.navbar.navbar-expand-lg{
+    position: f;
+    width: 100%;
+}
+.navbar-brand{
+    font-size: 40px;
+    margin-left: 10px;
+}
+.nav-item{
+    margin-left: 50px;
+    font-size: 20px
+}
+.navbar-toggler{
+}
+#Navbar{
+  position: sticky;
+  top: 0;               
+  background: linear-gradient(300deg, #8b5fe480, #8797da, #5e17eb80);
+  background-size: 180% 180%;
+  animation: gradient-animation 10s ease infinite;
+
+  z-index: 1000;         /* فوق المحتوى الآخر */
+  /* إذا تريد ظل بسيط تحت الـ navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#navbarSupportedContent.show{
+    
+}
+.Name{
+    color: #5e17eb;
+}
+.Text-Buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-left: 20px;
+    
+    justify-content: center;
+}
+.MainText > h1{
+    font-size: 100px;
+}
+#Introduction{
+    display: flex;
+    height: 70vh;
+    grid-template-columns: 50% 50%;
+    margin-top:60px;
+    margin-bottom: 100px;
+    
+    
+}
+.circle{
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  flex-shrink: 0;
+  overflow: hidden;
+  
+}
+.circle .carousel,
+.circle .carousel-inner,
+.circle .carousel-item {
+  height: 100%;
+}
+
+/* scale the image to fit, and pin it to the bottom */
+.circle .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+}
+.pic1{
+    width: 100%;
+    height: 100%;
+}
+.pic3{
+    width: 100%;
+    object-fit:fill !important;
+    height: 100%;
+}
+.pic2 {
+    width: 100%;
+    height: 100%;
+}
+.pic4{
+    width: 100%;
+    height: 100%;
+
+}
+.item4{
+
+}
+.Circle-image{
+
+    
+}
+.container{
+    margin: 0;
+    max-width: none;
+}
+/*
+.pic1{
+    width: 100%;
+    border-bottom-left-radius: 48%;
+    border-bottom-right-radius: 48%;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;
+}
+*/
+
+.BUTTONS {
+  display: inline-block;
+  padding: 10px 34px;
+  border: none;
+  border-radius: 999px;      /* يجعل الزر دائري الحواف */
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* الزر البنفسجي */
+.BUTTONS.primary {
+  background-color: #6C00FF;
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(108, 0, 255, 0.3);
+}
+.BUTTONS.primary:hover {
+  background-color: #5800CC;
+  box-shadow: 0 6px 14px rgba(108, 0, 255, 0.4);
+}
+
+/* الزر الرمادي الداكن */
+.BUTTONS.secondary {
+  background-color: #4F5162;
+  color: #FFFFFF;
+}
+.BUTTONS.secondary:hover {
+  background-color: #3D3E50;
+}
+
+
+
+/* Projects section */
+
+#Projects > div > h1{
+    font-size: 100px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.AllProjects{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    
+}
+.project{
+    height: 500px;
+    width: 450px;
+    background-color: #0d1b2a;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    display: grid;
+    grid-auto-rows: 50% 35% 15%;
+   
+}
+.Icon{
+    overflow: hidden;
+    border-top-right-radius: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Icon > img{
+    width: 100%;
+    height: auto;
+}
+.google img, .Microsoft img{
+    position: relative;
+    
+}
+.Description{
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+    height: fit-content;
+}
+.Visit-Button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.Visit-Button > button{
+    border: none;
+    background-color: #4F5162;
+    width: 90%;
+    border-radius: 999px;  
+    color: white;
+}
+
+.shortText{
+    margin-left: 35px !important;
+    margin-bottom: 50px;
+}
+/* */
+
+
+@media (max-width: 992px) {
+ #Introduction{
+    justify-content: center;
+ }
+ .circle{
+  width: 300px !important;
+  height: 300px !important;
+ }
+ .BUTTONS{
+    padding: 10px 24px;
+    font-size: 20px;
+ }
+.Circle-image{
+    display: flex;
+    justify-content: center;
+    order:-1
+}
+.Text-Buttons{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+/*
+.pic1{
+    width: 100%;
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+    bottom: 20px !important;
+}
+    */
+.AllProjects{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 19px;
+}
+.project{
+    width: 350px;
+    height: 400px;
+}
+
+.Title{
+    text-align: center;
+    
+}
+.shortText{
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px !important;
+}
+#Projects > div.Title > h1{
+    margin-left: 0;
+}
+#Introduction{
+    height: 80vh;
+}
+
+}
+
+@media (max-width: 1250px) and (min-width: 992px) {
+  .circle{
+  width: 400px;
+  height: 450px;
+ }
+ .project{
+    width: 300px !important;
+    height: 450px !important;
+}
+.shortText{
+  
+}
+/*
+.pic1{
+    width: 100%;
+    border-bottom-left-radius: 47%;
+    border-bottom-right-radius: 48%;
+    top:10px;
+}
+*/
+}
+@media (max-width: 1400px){
+
+    .project{
+    width:400px;
+    height:470px;
+    }
+}
+

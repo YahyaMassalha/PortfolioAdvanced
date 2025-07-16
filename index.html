@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+<section id="Navbar">
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Yahya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            WorkSpaces
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">WorkSpace1</a></li>
+            <li><a class="dropdown-item" href="#">WorkSpace2</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">WorkSpace3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<section id="Introduction"> 
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12 Text-Buttons">
+            <div class="MainText">
+                <h1>Hey, I'm <span class="Name">Yahya</span></h1>
+            </div>
+            <div class="Developer">
+                <h4>A Website Developer</h4>
+            </div>
+            <div class="Buttons">
+                <button class="primary BUTTONS" onclick="window.open('https://wa.me/972502347770', '_blank')">Let's Talk</button>
+                <button class="secondary BUTTONS"  onclick="location.href='#Projects'" >My Projects</button>
+            </div>
+        </div>
+            <div class="col-lg-5 col-sm-12 Circle-image"> 
+            <div class="circle">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./Images/Em-Alhasan-removebg-preview.png" class="d-block pic pic1" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./Images/Yahya3.png" class="d-block pic pic2" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./Images/afawy.jpeg" class="d-block pic pic3" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./Images/Em-Alhasan-removebg-preview.png" class="d-block pic pic4" alt="...">
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+<section id="Projects">
+    <div class="Title">
+        <h1>Projects</h1>
+    </div>
+    <div class="shortText">
+        <h4>I'm the founder of Google, Microsoft and Apple, it took me couple of years to establish those companies,
+            And it wasn't a losing bet.
+        </h4>
+     </div>
+    <div class="AllProjects">
+        <div class="project google"> 
+            <div class="Icon"> <img src="./Images/google-logo.jpg"></div>
+            <div class="Description">Google is the world’s leading search engine, helping billions find information, services, and tools online.</div>
+            <div class="Visit-Button"><button type="button" onclick="window.open('https://www.google.com', '_blank')"> Visit Google</button></div>
+            
+        </div>
+        <div class="project Microsoft"> 
+            <div class="Icon"> <img src="./Images/microsoftlogojpg.jpg"> </div>
+            <div class="Description">Microsoft is a global technology company known for Windows, Office, and cloud services like Azure.</div>
+            <div class="Visit-Button"><button type="button" onclick="window.open('https://www.microsoft.com', '_blank')"> Visit Microsoft</button></div>
+            
+        </div>
+        <div class="project Apple"> 
+            <div class="Icon"> <img src="./Images/AppleIcon.png"> </div>
+            <div class="Description">Apple is a leading tech company famous for the iPhone, Mac, and innovative user-friendly products.</div>
+            <div class="Visit-Button"><button type="button" onclick="window.open('https://www.apple.com', '_blank')"> Visit Apple</button></div>
+        </div>
+    </div>
+
+ </section>
+
+ <script>
+  document.getElementById('go-Projects')
+    .addEventListener('click', () => {
+      document
+        .getElementById('Projects')
+        .scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
